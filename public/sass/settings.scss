@@ -1,0 +1,38 @@
+// colours
+$gold: #907145;
+$brown: rgba(242, 233, 223, 0.8);
+$off-black: #222;
+$off-grey: #4c4c4c;
+$light-grey: #a2a2a2;
+$trans-white: rgba(255, 255, 255, 0.95);
+
+
+// sizes
+$desktop-breakpoint: 62rem;
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+// .container {
+//     width: 90%;
+//     margin: 0 auto;
+//     text-align: center;
+//   }
+  
+//   @media (min-width: $desktop-breakpoint) {
+//     .container {
+//       width: 90%;
+//     }
+//   }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

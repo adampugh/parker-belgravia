@@ -1,0 +1,82 @@
+video {
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+    object-fit: fill;
+}
+
+.video__overlay {
+    background: rgba(10,10,10,0.6);
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    min-height: 100vh;
+    z-index: 10;
+    input {
+        background: rgba(255, 255, 255, 0.4);
+        border: 1px solid white;
+        color: white;
+        display: inline;
+        width: 70%;
+        border-radius: 5px;
+        padding: .8em;
+        text-align: center;
+        &::placeholder {
+            color: $trans-white;
+        }
+    }
+    h1 {
+        font-size: 3em;
+        padding-top: 2em;
+    }
+    p {
+        margin: 2em 0;
+        padding: 0 2em;
+    }
+}
+
+.video__container {
+    max-height: 100vh;
+}
+
+.blue {
+    height: 400px;
+    background: blue;
+    z-index: 40;
+}
+
+.btn--white {
+    padding: .5em 3em;
+    margin: 1em;
+    background: rgba(0,0,0,0);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out;
+    transition: background-color .5s ease-out;
+    &:hover {
+        background-color: white;
+        color: $off-grey;
+    }
+    
+}
+
+
+@media (min-width: $desktop-breakpoint) {
+    .video__overlay {
+        input {
+            width: 55%;
+        }
+    }
+}

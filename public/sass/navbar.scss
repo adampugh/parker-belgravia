@@ -1,0 +1,117 @@
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1;
+    padding: 2em 0;
+    background: white;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: fixed;
+    z-index: 99;
+}
+
+
+.navbar__links--desktop {
+    display: none;
+}
+
+.navbar__links--mobile {
+    display: none;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+
+.hamburger__menu {
+    cursor: pointer;
+    font-size: 1.5em;
+    padding-right: 1em;
+    justify-self: end;
+    align-self: center;
+}
+
+.navbar__links--mobile {
+    padding-top: 2em;
+    a {
+        display: block;
+        padding: 2em 0;
+    }
+}
+
+
+.navbar__number {
+    display: none;
+}
+
+
+
+@media (min-width: $desktop-breakpoint) {
+    .navbar {
+        grid-template-columns: 1fr 2fr 1fr;
+        width: 100%;
+    }
+
+    .blank {
+        display: none;
+    }
+
+    .blank--2 {
+        display: none;
+    }
+    .hamburger__menu {
+        display: none;
+    }
+
+    .navbar__links--mobile {
+        display: none;
+    }
+
+
+    $animate: all 0.2s ease-in-out;
+
+    .navbar__links--desktop {
+        display: block;
+        margin-top: 0;
+        align-self: center;
+        a {
+            position: relative;
+            margin: 0 1em;
+            color: $off-grey;
+          }
+          
+          a:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: rgb(228, 228, 228);
+            visibility: hidden;
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s;
+          }
+          
+          a:hover:before {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+          }
+    }
+
+
+    .navbar__number {
+        color: $light-grey;
+        display: block;
+        align-self: center;
+        i {
+            // font-size: 2em;
+            padding-left: .5em;
+        }
+    }
+}
