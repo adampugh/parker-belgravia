@@ -44,7 +44,6 @@
 
 .navbar__number {
     display: none;
-    font-weight: 600;
 }
 
 
@@ -53,6 +52,9 @@
     .navbar {
         grid-template-columns: 1fr 2fr 1fr;
         width: 100%;
+        .logo {
+            padding-left: 28%;
+        }
     }
 
     .blank {
@@ -111,7 +113,6 @@
         display: block;
         align-self: center;
         i {
-            // font-size: 2em;
             padding-left: .5em;
         }
     }

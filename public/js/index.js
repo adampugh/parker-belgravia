@@ -9,13 +9,10 @@ let url = "https://parker-api.herokuapp.com/properties";
 
 $.get(url, function(data) {
     const properties = JSON.parse(data);
-    // properties.map((property) => {
-    //     $(".blue").append("h1").text(property.name);
-    // })
-    $(".grey-banner__text").append(`<h1>${properties.length} Luxury Homes for Sale in London`);
-    // let smallDiv = '<div class="smallDiv">yes</div>';
 
-    // pass data to function
+    $(".grey-banner__text").append(`<h1>${properties.length} Luxury Homes for Sale in London`);
+
+    // creates listing panels
     function addDiv(property) {
         $(".properties").append(
             `<div class="panel">

@@ -11,6 +11,8 @@ $trans-white: rgba(255, 255, 255, 0.95);
 // sizes
 $desktop-breakpoint: 62rem;
 
+
+// defaults
 html {
     font-family: 'Open Sans', sans-serif;
 }
@@ -22,6 +24,19 @@ body, html {
 
 * {
     box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+// common classes
+.logo {
+    text-transform: uppercase;
+    font-family: 'Marcellus SC', serif;
 }
 
 
@@ -43,21 +58,13 @@ body, html {
     }
 }
 
-
-
-
 .container {
     width: 90%;
     margin: 0 auto;
-  }
+}
   
-  @media (min-width: $desktop-breakpoint) {
+@media (min-width: $desktop-breakpoint) {
     .container {
       width: 84%;
     }
-  }
-
-a {
-    text-decoration: none;
-    color: inherit;
 }
