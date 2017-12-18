@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
         <link rel="stylesheet" href="./public/css/styles.css">
+        <link rel="shortcut icon" href="./public/images/mansion-icon.ico" type="image/x-icon">
         
     </head>
     <body>
@@ -41,7 +43,7 @@
         <header>
                 <div class="video__container">
                         <div class="video__overlay">
-                            
+                            <img src="./public/images/mansion.png" alt="">
                             <h1>Luxury London Realty</h1>
                             <p>Sign up to our weekly publication for the latest news on luxury properties in London.</p>
                             <input type="text" placeholder="Email Address" /><button class="btn--white">Sign Up</button>
@@ -51,21 +53,69 @@
                         </video>
                     </div>
         </header>
+
+
+        <div class="grey-banner">
+            <div class="grey-banner__text"></div>
+        </div>
         
-        <div class="blue"></div>
+       <!-- properties -->
+        <div class="container">
+            <div class="properties">
+                
+            </div>
+        </div>
+        
+
+        <!-- publications -->
+        <div class="publications">
+            <div class="containerx">
+                <div class="publications__grid">
+                    <div class="publications__discover">
+                        <h1 class="title">Discover properties</h1>
+                        <ul class="publications__discover__items">
+                            <li>
+                                <h3>London - Luxury Apartments</h3>
+                                <h5>Tuesday, January 4th 2018</h5>
+                            </li>
+                            <hr />
+                            <li>
+                                <h3>Spain - Luxury Villas</h3>
+                                <h5>Tuesday, January 24th 2018</h5>
+                            </li>
+                            <hr />
+                            <li>
+                                <h3>Lisbon - Fantastic Houses</h3>
+                                <h5>Tuesday, March 2nd 2018</h5>
+                            </li>
+                            <hr />
+                            <li>
+                                <h3>Tel Aviv - Luxury Apartments</h3>
+                                <h5>Monday, December 17th 2017</h5>
+                            </li>
+                            <hr />
+                        </ul>
+                    </div>
+                    <div class="publications__latest">
+                        <div class="publications__issue">
+                            <h1 class="title">Issue #8 - June 2018</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quibusdam quia nostrum qui sit ab ipsa ad officia ratione! Quibusdam?</p>
+                        </div>
+                        <div class="publications__issue publications__issue--2">
+                                <h1 class="title">Issue #7 - May 2018</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quibusdam quia nostrum qui sit ab ipsa ad officia ratione! Quibusdam?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://use.fontawesome.com/2398d4121c.js"></script>
         <script src="./public/js/index.js"></script>
-    <!-- <script>
-        function myMethod(data) {
-            console.log(data);
-        }
-    </script>
-    <script src="http://api.zoopla.co.uk/api/v1/property_listings.json?postcode=sw3&listing_status=sale&minimum_price=4000000&api_key=ypv4p5xc5vv5bzn26sysjp4p&jsonp=myMethod"></script>
-
-     -->
+    
+    <!-- http://api.zoopla.co.uk/api/v1/property_listings.json?postcode=sw3&listing_status=sale&minimum_price=4000000&api_key=ypv4p5xc5vv5bzn26sysjp4p&jsonp=myMethod -->
     </body>
 
 </html>

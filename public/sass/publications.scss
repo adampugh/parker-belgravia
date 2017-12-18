@@ -1,0 +1,74 @@
+.publications {
+    background: rgb(232, 232, 232);
+    color: $off-black;
+    margin-bottom: 4em;
+}
+
+.publications__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.publications__discover {
+    padding: 4em 8%;
+}
+
+.title {
+    margin-bottom: 2em;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.publications__discover__items {
+    list-style:none;
+    padding-left:0;
+    li {
+        padding: .3em 0;
+        h3 {
+            cursor: pointer;
+            &:hover {
+                color: $light-grey;
+            }
+        }
+        h5 {
+            color: $off-grey;
+        }
+    }
+}
+
+
+.publications__latest {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.publications__issue {
+    background-image: linear-gradient(rgba(25, 25, 25, 0.2), rgba(40,40,40,0.5)), url("../images/april.jpg");
+    background-size: cover;
+    height: 100%;
+    color: white;
+    padding: 4em 8%;
+    border: solid white;
+    border-width: 0 25px 25px 25px;
+}
+
+.publications__issue--2 {
+    background-image: linear-gradient(rgba(25, 25, 25, 0.9), rgba(40,40,40,0.7)), url("../images/may.jpg");
+}
+
+.darkgrey {
+    background: $off-grey;
+    padding: 4em 8%;
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .publications__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .publications__discover {
+        padding: 4em 16%;
+    }
+    .publications__issue {
+        padding: 4em 16%;
+    }
+}

@@ -21,7 +21,7 @@ video {
     min-height: 100vh;
     z-index: 10;
     input {
-        background: rgba(255, 255, 255, 0.4);
+        background: rgba(255, 255, 255, 0.3);
         border: 1px solid white;
         color: white;
         display: inline;
@@ -32,10 +32,23 @@ video {
         &::placeholder {
             color: $trans-white;
         }
+        &:focus {
+            background: rgba(255, 255, 255, 0.8);
+            color: $off-grey;
+            &::placeholder {
+                color: transparent;
+            }
+        }
     }
+    img {
+        height: 10em;
+        padding-top: 6em;
+    }
+
     h1 {
+        font-family: 'Playfair Display', serif;
         font-size: 3em;
-        padding-top: 2em;
+        margin: 0;
     }
     p {
         margin: 2em 0;
@@ -70,6 +83,24 @@ video {
         color: $off-grey;
     }
     
+}
+
+
+.grey-banner {
+    // background: $off-black;
+    background: $light-grey;
+    .grey-banner__text {
+        width: 84%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    h1 {
+        margin: 0;
+        padding: 1em 0;
+        color: white;
+        
+        font-weight: 300;
+    }
 }
 
 

@@ -1,0 +1,59 @@
+.properties {
+    display: grid;
+    grid-template-columns: 1fr;
+    box-sizing: border-box;
+    padding: 6em 0;
+}
+
+.panel {
+    border: 1px solid rgb(221, 221, 221);
+    justify-self: center;
+    margin: 1em 0;
+    cursor: pointer;
+    img {
+        width: 100%;
+    }
+    .panel__text {
+        padding: 0 1em;
+        h2 {
+            margin: .5em 0 .4em 0;
+            font-family: 'Playfair Display', serif;
+        }
+        h3, h5 {
+            font-weight: 400;
+            color: $light-grey;
+            margin: 0;
+        }
+        i {
+            padding-left: .2em;
+            font-size: 1em;
+            color: rgb(202, 200, 200);
+        }
+    }
+    .panel__text__details {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 1em 0;
+        h3, h5 {
+            margin: 0;
+        }
+        .price {
+            h3 {
+                color: rgb(187, 164, 61);
+                font-size: 1.3em;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: $desktop-breakpoint) {
+    .properties {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .panel {
+        margin: 1em;
+    }
+}
