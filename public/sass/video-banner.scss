@@ -60,31 +60,6 @@ video {
     max-height: 100vh;
 }
 
-.blue {
-    height: 400px;
-    background: blue;
-    z-index: 40;
-}
-
-.btn--white {
-    padding: .5em 3em;
-    margin: 1em;
-    background: rgba(0,0,0,0);
-    color: white;
-    border: 1px solid white;
-    border-radius: 5px;
-    cursor: pointer;
-    -webkit-transition: background-color .5s ease-out;
-    -moz-transition: background-color .5s ease-out;
-    -o-transition: background-color .5s ease-out;
-    transition: background-color .5s ease-out;
-    &:hover {
-        background-color: white;
-        color: $off-grey;
-    }
-    
-}
-
 
 .grey-banner {
     // background: $off-black;

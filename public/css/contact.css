@@ -1,0 +1,4 @@
+.contact {
+  margin: 4em 0;
+  display: grid;
+  grid-template-columns: 1fr; }
