@@ -49,10 +49,11 @@
     color: white;
     padding: 4em 8%;
     border: solid white;
-    border-width: 0 25px 25px 25px;
+    border-width: 0 25px 12.5px 25px;
 }
 
 .publications__issue--2 {
+    border-width: 12.5px 25px 0 25px;
     background-image: linear-gradient(rgba(25, 25, 25, 0.9), rgba(40,40,40,0.7)), url("../images/may.jpg");
 }
 

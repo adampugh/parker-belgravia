@@ -46,12 +46,11 @@ $.get(url, function(data) {
         addDiv(properties[i]);
     }
 
+});
 
 
-})
-
-
-// create function that returns panel div that accepts an object as an argument
-function createDiv(obj) {
-    
+//auto expand textarea
+function adjust_textarea(h) {
+    h.style.height = "20px";
+    h.style.height = (h.scrollHeight)+"px";
 }
