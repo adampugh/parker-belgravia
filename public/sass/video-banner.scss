@@ -2,7 +2,7 @@ video {
     width: 100%;
     min-height: 100vh;
     max-height: 100vh;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .video__overlay {
@@ -84,5 +84,8 @@ video {
         input {
             width: 55%;
         }
+    }
+    video {
+        object-fit: fill;
     }
 }

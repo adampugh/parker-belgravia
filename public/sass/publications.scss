@@ -1,3 +1,8 @@
+.publications-container {
+    padding-top: 4em;
+}
+
+
 .publications {
     background: rgb(232, 232, 232);
     color: $off-black;
@@ -49,7 +54,7 @@
     color: white;
     padding: 4em 8%;
     border: solid white;
-    border-width: 0 25px 12.5px 25px;
+    border-width: 4em 25px 12.5px 25px;
 }
 
 .publications__issue--2 {
@@ -71,5 +76,10 @@
     }
     .publications__issue {
         padding: 4em 16%;
+        border-width: 0 25px 12.5px 25px;
     }
+    .publications__issue--2 {
+        border-width: 12.5px 25px 0 25px;
+    }
+    
 }

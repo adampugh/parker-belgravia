@@ -4,6 +4,38 @@ $(".hamburger__menu").on("click", () => {
 });
 
 
+// scroll into view
+$(".home-btn").on("click", (e) => {
+    e.preventDefault();
+    $(".navbar__links--mobile").fadeOut();
+    document.querySelector('#header').scrollIntoView({ block: "start", behavior: 'smooth' });
+});
+
+$(".properties-btn").on("click", (e) => {
+    e.preventDefault();
+    $(".navbar__links--mobile").fadeOut();
+    document.querySelector('#properties').scrollIntoView({ block: "start", behavior: 'smooth' });
+});
+
+$(".blog-btn").on("click", (e) => {
+    e.preventDefault();
+    $(".navbar__links--mobile").fadeOut();
+    document.querySelector('#blog').scrollIntoView({ block: "start", inline: "start", behavior: 'smooth' });
+});
+
+$(".contact-btn").on("click", (e) => {
+    e.preventDefault();
+    $(".navbar__links--mobile").fadeOut();
+    document.querySelector('#contact').scrollIntoView({ block: "start", behavior: 'smooth' });
+});
+
+
+
+
+
+
+
+
 // api call
 let url = "https://parker-api.herokuapp.com/properties";
 

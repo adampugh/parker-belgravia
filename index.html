@@ -4,9 +4,7 @@
         <title>Parker Belgravia | Real Estate</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Arapey|Italiana|Marcellus+SC|Suranna" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Marcellus+SC|Open+Sans:300,400,600|Playfair+Display" rel="stylesheet">
         
         
         <link rel="stylesheet" href="./public/css/styles.css">
@@ -22,17 +20,22 @@
                     &#9776;
                 </div>
                 <div class="navbar__links--desktop">
-                    <a href="" class="navbar__link">Belgravia</a>
-                    <a href="">About</a>
-                    <a href="">Blog</a>
-                    <a href="">Contact</a>
+                    <a href="#" class="home-btn">Home</a>
+                    <a href="#" class="properties-btn">Belgravia</a>
+                    <a href="#" class="blog-btn">Blog</a>
+                    <a href="#" class="contact-btn">Contact</a>
                 </div>
                 <div class="blank--2"></div>
                 <div class="navbar__links--mobile">
-                    <a href="">Belgravia</a>
-                    <a href="">About</a>
-                    <a href="">Blog</a>
-                    <a href="">Contact</a>
+                    <a href="#" class="home-btn">Home</a>
+                    <a href="#" class="properties-btn">Belgravia</a>
+                    <a href="#" class="blog-btn">Blog</a>
+                    <a href="#" class="contact-btn">Contact</a>
+                    <div class="social-links">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <div class="navbar__number">
                     020 7352 5556
@@ -43,16 +46,17 @@
 
 
         <!-- webm needed -->
-        <header>
+        <header id="header">
                 <div class="video__container">
                         <div class="video__overlay">
-                            <img src="./public/images/mansion.png" alt="">
+                            <img src="./public/images/mansion.png" alt="Photo by Jamie Street">
                             <h1>Luxury London Realty</h1>
                             <p>Sign up to our weekly publication for the latest news on luxury properties in London.</p>
                             <input type="text" placeholder="Email Address" /><button class="btn">Sign Up</button>
                         </div>
-                        <video poster="" autoplay muted loop playsinline>
+                        <video poster="./public/images/poster.jpg" autoplay muted loop playsinline>
                             <source src="./public/video/Belgravia.mp4" type="video/mp4"> 
+                            <source src="./public/video/Belgravia.ogg" type="video/ogg"> 
                         </video>
                     </div>
         </header>
@@ -63,7 +67,7 @@
         </div>
         
        <!-- properties -->
-        <div class="container">
+        <div class="container" id="properties">
             <div class="properties">
                 
             </div>
@@ -71,42 +75,44 @@
         
 
         <!-- publications -->
-        <div class="publications">
-            <div class="containerx">
-                <div class="publications__grid">
-                    <div class="publications__discover">
-                        <h1 class="title">Discover properties</h1>
-                        <ul class="publications__discover__items">
-                            <li>
-                                <h3>London - Luxury Apartments</h3>
-                                <h5>Tuesday, January 4th 2018</h5>
-                            </li>
-                            <hr />
-                            <li>
-                                <h3>Spain - Luxury Villas</h3>
-                                <h5>Tuesday, January 24th 2018</h5>
-                            </li>
-                            <hr />
-                            <li>
-                                <h3>Lisbon - Fantastic Houses</h3>
-                                <h5>Tuesday, March 2nd 2018</h5>
-                            </li>
-                            <hr />
-                            <li>
-                                <h3>Tel Aviv - Luxury Apartments</h3>
-                                <h5>Monday, December 17th 2017</h5>
-                            </li>
-                            <hr />
-                        </ul>
-                    </div>
-                    <div class="publications__latest">
-                        <div class="publications__issue">
-                            <h1 class="title">Issue #8 - June 2018</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quibusdam quia nostrum qui sit ab ipsa ad officia ratione! Quibusdam?</p>
+        <div class="publications-container" id="blog">
+            <div class="publications">
+                <div class="containerx">
+                    <div class="publications__grid">
+                        <div class="publications__discover">
+                            <h1 class="title">Discover properties</h1>
+                            <ul class="publications__discover__items">
+                                <li>
+                                    <h3>London - Luxury Apartments</h3>
+                                    <h5>Tuesday, January 4th 2018</h5>
+                                </li>
+                                <hr />
+                                <li>
+                                    <h3>Spain - Luxury Villas</h3>
+                                    <h5>Tuesday, January 24th 2018</h5>
+                                </li>
+                                <hr />
+                                <li>
+                                    <h3>Lisbon - Fantastic Houses</h3>
+                                    <h5>Tuesday, March 2nd 2018</h5>
+                                </li>
+                                <hr />
+                                <li>
+                                    <h3>Tel Aviv - Luxury Apartments</h3>
+                                    <h5>Monday, December 17th 2017</h5>
+                                </li>
+                                <hr />
+                            </ul>
                         </div>
-                        <div class="publications__issue publications__issue--2">
+                        <div class="publications__latest">
+                            <div class="publications__issue">
+                                <h1 class="title">Issue #8 - June 2018</h1>
+                                <p>Read the latest articles from our Madrid office, looking at some of the most stunning luxury villas available in locations like Madrid, Barcelona and Seville.</p>
+                            </div>
+                            <div class="publications__issue publications__issue--2">
                                 <h1 class="title">Issue #7 - May 2018</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quibusdam quia nostrum qui sit ab ipsa ad officia ratione! Quibusdam?</p>
+                                <p>Browse the best the UK has to offer in our traditional luxury houses edition. View properties from mansion houses in London to castles in Edinburgh.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -115,7 +121,7 @@
 
 
         <!-- contact -->
-        <div class="container">
+        <div class="container" id="contact">
             <div class="contact">
 
                 <div class="contact__form">
@@ -166,10 +172,10 @@
                     </div>
 
                     <div class="footer-right">
-                        <h5><a href="">For Sale</a></h5>
-                        <h5><a href="">About</a></h5>
-                        <h5><a href="">Blog</a></h5>
-                        <h5><a href="">Contact</a></h5>
+                        <h5><a href="#" class="home-btn">Home</a></h5>
+                        <h5><a href="#" class="properties-btn">Belgravia</a></h5>
+                        <h5><a href="#" class="blog-btn">Blog</a></h5>
+                        <h5><a href="#" class="contact-btn">Contact</a></h5>
                     </div>
 
                 </div>
