@@ -67,7 +67,9 @@ let url = "https://parker-api.herokuapp.com/properties";
 $.get(url, function(data) {
     $(".loader__container").hide();
 
-    JSON.parse(data).map(property => {
+    let properties = JSON.parse(data);
+
+    properties.map(property => {
         addDiv(property);
     });
 
