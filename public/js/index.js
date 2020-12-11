@@ -66,9 +66,9 @@ let url = "https://parker-api.herokuapp.com/properties";
 
 $.get(url, function(data) {
     $(".loader__container").hide();
-
-    let properties = JSON.parse(data);
-
+    // after mlab sunset
+    const properties = [{"_id":"5a33f42067bd3000149ca5f9","name":"Old Church Street","location":"Chelsea, London","beds":"4","baths":"5","price":"£10,000,000","image":"https://image.ibb.co/iHfvvR/1.jpg"},{"_id":"5a33f4a367bd3000149ca5fa","name":"Lexham Gardens","location":"Kensington, London","beds":"3","baths":"4","price":"£8,500,000","image":"https://image.ibb.co/dzmqUm/2.jpg"},{"_id":"5a33f72b67bd3000149ca5fb","name":"Chapel House","location":"Belgravia, London","beds":"6","baths":"4","price":"£12,500,000","image":"https://image.ibb.co/mFuNaR/3.jpg"},{"_id":"5a33f74c67bd3000149ca5fc","name":"Luxury Penthouse","location":"Belgravia, London","beds":"3","baths":"2","price":"£7,500,000","image":"https://image.ibb.co/i3navR/4.jpg"},{"_id":"5a33f77667bd3000149ca5fd","name":"Ebury House","location":"Belgravia, London","beds":"3","baths":"3","price":"£8,200,000","image":"https://image.ibb.co/bsJth6/5.jpg"},{"_id":"5a33f7b467bd3000149ca5fe","name":"Wilton Court","location":"Belgravia, London","beds":"5","baths":"4","price":"£8,500,000","image":"https://image.ibb.co/fsG2aR/6.jpg"},{"_id":"5a33f7ca67bd3000149ca5ff","name":"Eaton Gardens","location":"Belgravia, London","beds":"5","baths":"4","price":"£6,800,000","image":"https://image.ibb.co/hwVjpm/7.jpg"},{"_id":"5a33f81867bd3000149ca600","name":"Blenheim House","location":"Kensington, London","beds":"3","baths":"3","price":"£6,400,000","image":"https://image.ibb.co/nbpzN6/8.jpg"},{"_id":"5a33f83667bd3000149ca601","name":"Peter Court","location":"Belgravia, London","beds":"4","baths":"3","price":"£6,200,000","image":"https://image.ibb.co/dbTth6/9.jpg"}]
+    
     properties.map(property => {
         addDiv(property);
     });
